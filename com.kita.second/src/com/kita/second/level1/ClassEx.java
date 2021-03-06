@@ -1,6 +1,6 @@
 package com.kita.second.level1;
 
-public class ClassEx {
+public class ClassEx extends Object {
 	// 필드
 	int field1;
 	String field2;
@@ -8,7 +8,7 @@ public class ClassEx {
 	
 	// 생성자
 	public ClassEx() {
-		
+//		super();
 	}
 	
 	public ClassEx(int field1) {
