@@ -5,10 +5,12 @@ public class Korean {
 	final String ssn;
 	String name;
 	int age;
+	   
 	
 	public Korean(String ssn) {
 		this.ssn = ssn;
 	}
+	
 	
 }
 
