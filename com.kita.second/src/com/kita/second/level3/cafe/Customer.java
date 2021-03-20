@@ -11,7 +11,17 @@ public class Customer {
 		
 		while(mi == null) {
 			// 채우기
-			
+			System.out.print("메뉴 번호를 입력해주세요: ");
+			String strNum = scan.next();
+			int menuNum;
+			try {
+				menuNum = Integer.parseInt(strNum);
+				mi = m.choose(menuNum - 1);
+			} catch(NumberFormatException e) {
+				System.out.println("숫자만 입력해주세요.");
+			} catch(Exception e) {
+				System.out.println("메뉴를 잘못 선택했습니다.");
+			}
 		}
 		scan.close();
 		return mi;
@@ -24,3 +34,7 @@ public class Customer {
 	}
 
 }
+
+
+
+
